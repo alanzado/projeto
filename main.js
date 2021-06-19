@@ -5,9 +5,9 @@ var ul = document.querySelector("#listaGames")
 var form = document.querySelector("#formCadastro")
 var inputName = document.querySelector("#name")
 var inputLink = document.querySelector("#link")
-form.addEventListener('submit' , cadastro)
+form.addEventListener('submit' , Cadastro)
 
-function cadastro(evento){
+function Cadastro(evento){
     evento.preventDefault()
     let game = {
         "name": inputName.value,
@@ -31,7 +31,18 @@ function cadastro(evento){
     })
 }
 
-function deletaGames(){
+function deletaGames(evento){
+    const id = evento.target.value
+    const opcoes = {
+        "method": "DELETE"
+    }
+
+    const requisicao = fetch(url + "/" + id, opcoes)
+    requisicao.then(function(resposta){
+        if(resposta.status == 200){
+            recebeGames()
+        }
+    })
 }
 
 function imprimeGames(){
@@ -41,8 +52,10 @@ function imprimeGames(){
         li.textContent = `${game.name} (${game.link})`
         
         const botao = document.createElement('button')
-        botao.textContent = "Deletar"
+        botao.textContent = "Desativar"
+        botao.value = game._id
         botao.onclick = deletaGames
+
         li.appendChild(botao)
         ul.appendChild(li)
     }
