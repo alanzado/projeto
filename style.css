@@ -1,3 +1,6 @@
+body{
+    width: 100%;
+}
 header{
     background: blueviolet;
 }
@@ -6,4 +9,9 @@ main{
 }
 footer{
     background: burlywood;
+}
+
+button {
+    color: black;
+    background: white;
 }
