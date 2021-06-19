@@ -1,11 +1,12 @@
-body{
-    width: 100%;
-}
 header{
     background: blueviolet;
 }
+
 main{
     background: brown;
+}
+ul,li{
+    border: 1px solid black;
 }
 footer{
     background: burlywood;
@@ -14,4 +15,7 @@ footer{
 button {
     color: black;
     background: white;
+}
+::marker{
+    color: white;
 }
