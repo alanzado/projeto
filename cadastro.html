@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<title> Projeto - Alan Alves Zefino </title>
+</head>
+<body>
+	<header>
+        
+    </header>
+
+	<main>
+        <section class="form">
+            <h2>CADASTRO DE GAMES</h2>
+            <form id="formCadastro">
+                <p>Nome do jogo completo</p>
+                <input class="text" type="text" id="name" placeholder="Nome do game" >
+                <p>Categoria do jogo (mais de um separar por - )</p>
+                <input class="text" type="text" id="tag" placeholder="Categoria game" >
+                <p>Ano de lançamento do jogo (2000)</p>
+                <input class="text" type="text" id="data" placeholder="Ano Lançamento" >
+                <p>Colocar a porcentagem do desconto (0% a 100%)</p>
+                <input class="text" type="text" id="desc" placeholder="Desconto" >
+                <p>Link do jogo para resgatar (https://steam.game.com)</p>
+                <input class="text" type="url" id="link" placeholder="Link game" >
+                <p>Miniatura contendo URL (https://game.jpg)</p>
+                <input class="text" type="url" id="photo" placeholder="Miniatura" >
+                <input class="enviar" type="submit" value="Enviar" >
+            </form>
+        </section>
+        <h2 class="game-title" >GAMES EM PROMOÇÃO</h2>
+        <section id="listaGames">
+
+        </section>
+    </main>
+
+	<footer></footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>
