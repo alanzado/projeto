@@ -51,17 +51,18 @@ function imprimeGames(){
     ul.textContent = ''
     for(const game of listaGames){
 
-        const li = document.createElement('li')
-        li.textContent = `${game.name} (${game.link})`
-
-        img.src = `${game.photo}`    
+        const div = document.createElement('div')
+        div.innerHTML =`<img src=${game.photo}>
+        <h1>${game.name}</h1>
+        <p>${game.link}</p>        
+        `  
         const botao = document.createElement('button')
         botao.textContent = "Desativar"
         botao.value = game._id
         botao.onclick = deletaGames
 
-        li.appendChild(botao)
-        ul.appendChild(li)
+        div.appendChild(botao)
+        ul.appendChild(div)
     }
 }
 
