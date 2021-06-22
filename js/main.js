@@ -60,7 +60,7 @@ function imprimeGames(){
         <img class="game-photo" src="${game.photo}">
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
         <p><strong>Ano:</strong> ${game.data}</p>
-        ${game.link}
+        <a class="link" href="${game.link}" target="_blank">Resgatar</a>
         </div>
         `  
         const botao = document.createElement('button')
