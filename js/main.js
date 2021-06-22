@@ -1,12 +1,13 @@
 var listaGames = []
 
 const url = 'https://projeto-final-ppw.herokuapp.com/api/112135'
-var ul = document.querySelector("#listaGames")
+var section = document.querySelector("#listaGames")
 var form = document.querySelector("#formCadastro")
 var inputName = document.querySelector("#name")
 var inputLink = document.querySelector("#link")
 var inputPhoto = document.querySelector("#photo")
-var img = new Image("#photo")
+var inputData = document.querySelector("#data")
+var inputTag = document.querySelector("#tag")
 form.addEventListener('submit' , Cadastro)
 
 function Cadastro(evento){
@@ -14,7 +15,10 @@ function Cadastro(evento){
     let game = {
         "name": inputName.value,
         "link": inputLink.value,
-        "photo" : inputPhoto.value
+        "photo" : inputPhoto.value,
+        "data" : inputData.value,
+        "tag" : inputTag.value
+        
     }
     
     let texto = JSON.stringify(game)
@@ -48,13 +52,16 @@ function deletaGames(evento){
 }
 
 function imprimeGames(){
-    ul.textContent = ''
+    section.textContent = ''
     for(const game of listaGames){
 
         const div = document.createElement('div')
-        div.innerHTML =`<img src=${game.photo}>
-        <h1>${game.name}</h1>
-        <p>${game.link}</p>        
+        div.innerHTML =`<div class="game">
+        <img class="game-photo" src="${game.photo}">
+        <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
+        <p><strong>Ano:</strong> ${game.data}</p>
+        ${game.link}
+        </div>
         `  
         const botao = document.createElement('button')
         botao.textContent = "Desativar"
@@ -62,7 +69,7 @@ function imprimeGames(){
         botao.onclick = deletaGames
 
         div.appendChild(botao)
-        ul.appendChild(div)
+        section.appendChild(div)
     }
 }
 
