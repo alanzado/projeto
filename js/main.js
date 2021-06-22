@@ -5,17 +5,16 @@ var ul = document.querySelector("#listaGames")
 var form = document.querySelector("#formCadastro")
 var inputName = document.querySelector("#name")
 var inputLink = document.querySelector("#link")
-var inputImg = document.querySelector("#img")
+var inputPhoto = document.querySelector("#photo")
+var img = new Image("#photo")
 form.addEventListener('submit' , Cadastro)
-
-
 
 function Cadastro(evento){
     evento.preventDefault()
     let game = {
         "name": inputName.value,
         "link": inputLink.value,
-        "img" : inputImg.value
+        "photo" : inputPhoto.value
     }
     
     let texto = JSON.stringify(game)
@@ -53,8 +52,9 @@ function imprimeGames(){
     for(const game of listaGames){
 
         const li = document.createElement('li')
-        li.textContent = `${game.img} ${game.name} (${game.link})`
-        
+        li.textContent = `${game.name} (${game.link})`
+
+        img.src = `${game.photo}`    
         const botao = document.createElement('button')
         botao.textContent = "Desativar"
         botao.value = game._id
