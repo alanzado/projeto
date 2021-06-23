@@ -72,7 +72,7 @@ function imprimeGames() {
 function age(data) {
     let calculatedAge = new Date().getFullYear() - data;
     if (calculatedAge == 1) {
-        return "á 1 ano";
+        return "ha 1 ano";
     } else if (calculatedAge == 0) {
         return "Novo";
     } else {
