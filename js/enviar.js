@@ -62,11 +62,11 @@ function imprimeGames() {
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
         <p><strong>Lançamento:</strong> ${game.data}</p>
         <p><strong>Desconto:</strong> ${game.desc}</p>
-        <p><strong><a target="_blank" href=${game.link} >RESGATAR</a></strong></p>
+    <p><strong><a target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
         </div>
         `;
         const botao = document.createElement("button");
-        botao.innerHTML = "Desativar? Clique aqui ➔";
+        botao.innerHTML = "➔ Desativar? Clique aqui ";
         botao.value = game._id;
         botao.onclick = deletaGames;
 

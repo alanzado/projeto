@@ -62,7 +62,7 @@ function imprimeGames() {
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
         <p><strong>Lançamento:</strong> ${age(game.data)}</p>
         <p><strong>Desconto:</strong> ${game.desc}</p>
-        <p><strong><a target="_blank" href=${game.link} >RESGATAR</a></strong></p>
+        <p><strong><a target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
         </div>
         `;
         section.appendChild(div);
@@ -76,7 +76,7 @@ function age(data) {
     } else if (calculatedAge == 0) {
         return "Novo";
     } else {
-        return `á ${calculatedAge} anos`;
+        return `ha ${calculatedAge} anos`;
     }
 }
 
