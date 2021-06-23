@@ -9,27 +9,23 @@
         <title>Projeto - Alan Alves Zefino</title>
     </head>
     <body>
-        <header>
-            <img class="logo" src="favicon.png" />
-        </header>
+        <header class="header js-header" role="banner">
+            <img class="logo" src="favicon.png" alt="logo">
+            <nav id="menu" class="menu js-menu" role="navigation">
+              <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                  </li
+                  ><li>
+                    <a href="cadastro.html">Cadastro de promoções</a>
+                  </li>
+              </ul>
+            </nav>
+          </header>
 
         <main>
             <section class="form">
-                <h2>CADASTRO DE GAMES</h2>
                 <form id="formCadastro">
-                    <p>Nome do jogo completo</p>
-                    <input class="text" type="text" id="name" placeholder="Nome do game" />
-                    <p>Categoria do jogo (mais de um separar por - )</p>
-                    <input class="text" type="text" id="tag" placeholder="Categoria game" />
-                    <p>Ano de lançamento do jogo (2000)</p>
-                    <input class="text" type="text" id="data" placeholder="Ano Lançamento" />
-                    <p>Colocar a porcentagem do desconto (0% a 100%)</p>
-                    <input class="text" type="text" id="desc" placeholder="Desconto" />
-                    <p>Link do jogo para resgatar (https://steam.game.com)</p>
-                    <input class="text" type="url" id="link" placeholder="Link game" />
-                    <p>Miniatura contendo URL (https://game.jpg)</p>
-                    <input class="text" type="url" id="photo" placeholder="Miniatura" />
-                    <input class="enviar" type="submit" value="Enviar" />
                 </form>
             </section>
             <h2 class="game-title">GAMES EM PROMOÇÃO</h2>
@@ -41,4 +37,5 @@
         </footer>
     </body>
     <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </html>
