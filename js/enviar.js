@@ -65,7 +65,7 @@ function imprimeGames() {
         </div>
         `;
         const botao = document.createElement("button");
-        botao.textContent = "Desativar";
+        botao.innerHTML = "Desativar";
         botao.value = game._id;
         botao.onclick = deletaGames;
 

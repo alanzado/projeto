@@ -58,10 +58,11 @@ function imprimeGames() {
         const div = document.createElement("div");
         div.innerHTML = `
         <div class="game">
-        <img class="game-photo" src="${game.photo}">
+        <img href=${game.link} class="game-photo" src="${game.photo}">
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
         <p><strong>Lançamento:</strong> ${age(game.data)}</p>
         <p><strong>Desconto:</strong> ${game.desc}</p>
+        <p><strong><a target="_blank" href=${game.link} >RESGATAR</a></strong></p>
         </div>
         `;
         section.appendChild(div);

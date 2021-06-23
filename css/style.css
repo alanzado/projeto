@@ -15,11 +15,10 @@ body {
 
 /* MENU */
 
-
 .viewport {
   background-color: #fff;
-  margin: 0 auto;  
-  max-width: 20em;  
+  margin: 0 auto;
+  max-width: 20em;
 }
 
 .header {
@@ -30,6 +29,7 @@ body {
 .header a {
   color: #fff;
   text-decoration: none;
+  padding: 2%;
 }
 
 .menu {
@@ -49,14 +49,14 @@ body {
 .menu li:nth-child(odd) {
   background-color: #333;
 }
-  
+
 .menu li:nth-child(even) {
   background-color: #444;
 }
-  
+
 .menu a {
   display: block;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .no-js .menu {
@@ -65,16 +65,16 @@ body {
 
 .menu-button {
   background-color: transparent;
-  border: none;  
-  font-size: 2em;  
+  border: none;
+  font-size: 2em;
   line-height: 1;
   position: absolute;
-  right: .3em;
-  top: .2em;
+  right: 0.3em;
+  top: 0.2em;
 }
 
 .main {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 /* CONTEUDO */
@@ -130,9 +130,11 @@ img {
   line-height: 1.5;
 }
 
-footer {
+.footer {
   background-color: #222;
-  padding: 1%;
+  position: initial;
+  bottom: 0;
+  width: 100%;
 }
 
 /* FORMULARIO */
