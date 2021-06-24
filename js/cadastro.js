@@ -65,10 +65,10 @@ function imprimeGames() {
         <p><strong><a target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
         </div>
         `;
-        const botao = document.createElement("button");
-        botao.innerHTML = `
-        <button class="desativar">➔ Desativar? Clique aqui</button>`;
+        const botao = document.createElement(`button`);
+        botao.innerHTML = `➔ Excluir ${game.name}? Clique aqui!`;
         botao.value = game._id;
+        botao.getElementsByClassName("desativar")
         botao.onclick = deletaGames;
 
         div.appendChild(botao);

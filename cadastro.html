@@ -21,20 +21,21 @@
 
         <main>
             <section class="form">
-                <h2>CADASTRO DE GAMES</h2>
                 <form id="formCadastro">
+                    <h2>Cadastro <i>Promoção</i> Games</h2>
+                    <p>Fique a vontade para cadastrar as promoções</p>
                     <p>Nome do jogo completo</p>
-                    <input class="text" type="text" id="name" placeholder="Nome do game" />
+                    <input class="text" required="required" type="text" id="name" placeholder="Nome do game" />
                     <p>Categoria do jogo (mais de um separar por - )</p>
-                    <input class="text" type="text" id="tag" placeholder="Categoria game" />
+                    <input class="text" required="required" type="text" id="tag" placeholder="Categoria game" />
                     <p>Ano de lançamento do jogo (2000)</p>
-                    <input class="text" type="text" id="data" placeholder="Ano Lançamento" />
+                    <input class="text" required="required" type="text" id="data" placeholder="Ano Lançamento" />
                     <p>Colocar a porcentagem do desconto (0% a 100%)</p>
-                    <input class="text" type="text" id="desc" placeholder="Desconto" />
+                    <input class="text" required="required" type="text" id="desc" placeholder="Desconto" />
                     <p>Link do jogo para resgatar (https://steam.game.com)</p>
-                    <input class="text" type="url" id="link" placeholder="Link game" />
+                    <input class="text" required="required" type="url" id="link" placeholder="Link game" />
                     <p>Miniatura contendo URL (https://game.jpg)</p>
-                    <input class="text" type="url" id="photo" placeholder="Miniatura" />
+                    <input class="text" required="required" type="url" id="photo" placeholder="Miniatura" />
                     <input class="enviar" type="submit" value="Enviar" />
                 </form>
             </section>

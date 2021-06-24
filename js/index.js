@@ -25,6 +25,7 @@ function imprimeGames() {
     }
 }
 
+
 function age(data) {
     let calculatedAge = new Date().getFullYear() - data;
     if (calculatedAge == 1) {
