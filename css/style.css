@@ -119,13 +119,8 @@ img {
 
 /* BOTÃO */
 
-button{
+button {
   background: none;
-  border: 0px;
-}
-
-button.desativar {
-  background: none !;
   border: 0px;
   position: relative;
   font-weight: bold;
@@ -133,7 +128,7 @@ button.desativar {
   cursor: pointer;
 }
 
-.desativar:after {
+button:after {
   content: "";
   
   transition: inherit;
@@ -150,7 +145,7 @@ button.desativar {
   z-index: -1;
 }
 
-.desativar:hover:after {
+button:hover:after {
   width: calc(100% + 20px);
   border-radius: 20px; 
   opacity: 0.6;
