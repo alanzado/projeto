@@ -16,7 +16,7 @@ function imprimeGames() {
         <div class="game">
         <img href=${game.link} class="game-photo" src="${game.photo}">
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
-        <p><strong>Lançamento:</strong> ${age(game.data)}</p>
+        <p><strong>Lançamento:</strong> ${game.data}</p>
         <p><strong>Desconto:</strong> ${game.desc}</p>
         <p><strong><a target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
         </div>
@@ -25,7 +25,7 @@ function imprimeGames() {
     }
 }
 
-function age(data) {
+/*function age(data) {
     let calculatedAge = new Date().getFullYear() - data;
     if (calculatedAge == 1) {
         return "ha 1 ano";
@@ -34,7 +34,7 @@ function age(data) {
     } else {
         return `ha ${calculatedAge} anos`;
     }
-}
+}*/
 
 function recebeGames() {
     const requisicao = fetch(url);
