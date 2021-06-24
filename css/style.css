@@ -7,74 +7,17 @@ body {
 }
 
 .logo {
-  font-size: 1em;
-  margin: 0;
-  padding: 1em;
-  text-align: center;
-}
-
-/* MENU */
-
-.viewport {
-  background-color: #fff;
-  margin: 0 auto;
-  max-width: 20em;
-}
-
-.header {
-  background-color: #222;
-  padding: 1%;
-}
-
-.header a {
-  color: #fff;
-  text-decoration: none;
-  padding: 2%;
+  margin: 1%;
 }
 
 .menu {
-  display: none;
+  padding: 3%;
 }
 
-.menu.active {
-  display: block;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li:nth-child(odd) {
-  background-color: #333;
-}
-
-.menu li:nth-child(even) {
-  background-color: #444;
-}
-
-.menu a {
-  display: block;
-  padding: 0.5em;
-}
-
-.no-js .menu {
-  display: block;
-}
-
-.menu-button {
-  background-color: transparent;
-  border: none;
-  font-size: 2em;
-  line-height: 1;
-  position: absolute;
-  right: 0.3em;
-  top: 0.2em;
-}
-
-.main {
-  padding: 0.5em 1em;
+.header{
+  background-color: #222;
+  padding-bottom: 1%;
+  width: 100%;
 }
 
 /* CONTEUDO */
@@ -138,15 +81,36 @@ img {
   width: 100%;
 }
 
-button {
+/* FORMULARIO */
+
+.form {
+  text-align: center;
+  max-width: 100%;
+}
+.text {
+  padding: 2% 20%;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+
+/* BOTÃO */
+
+button{
   background: none;
+  border: 0px;
+}
+
+button.desativar {
+  background: none !;
   border: 0px;
   position: relative;
   font-weight: bold;
   transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 
-button:after {
+.desativar:after {
   content: "";
   
   transition: inherit;
@@ -163,24 +127,11 @@ button:after {
   z-index: -1;
 }
 
-button:hover:after {
+.desativar:hover:after {
   width: calc(100% + 20px);
   border-radius: 20px; 
   opacity: 0.6;
   
-}
-
-/* FORMULARIO */
-
-.form {
-  text-align: center;
-  max-width: 100%;
-}
-.text {
-  padding: 2% 20%;
-  text-align: center;
-  padding: auto;
-  margin: auto;
 }
 
 .enviar {
@@ -192,6 +143,7 @@ button:hover:after {
   display: inline-block;
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 .enviar:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);

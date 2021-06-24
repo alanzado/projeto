@@ -1,56 +1,12 @@
-var listaGames = [];
-
 const url = "https://projeto-final-ppw.herokuapp.com/api/112135";
+
 var section = document.querySelector("#listaGames");
-var form = document.querySelector("#formCadastro");
 var inputName = document.querySelector("#name");
 var inputLink = document.querySelector("#link");
 var inputPhoto = document.querySelector("#photo");
 var inputData = document.querySelector("#data");
 var inputTag = document.querySelector("#tag");
 var inputDesc = document.querySelector("#desc");
-form.addEventListener("submit", Enviar);
-
-function Enviar(evento) {
-    evento.preventDefault();
-    let game = {
-        name: inputName.value,
-        link: inputLink.value,
-        photo: inputPhoto.value,
-        data: inputData.value,
-        tag: inputTag.value,
-        desc: inputDesc.value,
-    };
-
-    let texto = JSON.stringify(game);
-
-    const opcoes = {
-        method: "POST",
-        body: texto,
-        headers: {
-            "content-type": "application/json",
-        },
-    };
-    const requisicao = fetch(url, opcoes);
-    requisicao.then(function (resposta) {
-        console.log(resposta.status);
-        recebeGames();
-    });
-}
-
-function deletaGames(evento) {
-    const id = evento.target.value;
-    const opcoes = {
-        method: "DELETE",
-    };
-
-    const requisicao = fetch(url + "/" + id, opcoes);
-    requisicao.then(function (resposta) {
-        if (resposta.status == 200) {
-            recebeGames();
-        }
-    });
-}
 
 function imprimeGames() {
     section.textContent = "";
