@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+p,h1,h2,h3,h4,a{
+  text-transform: uppercase;
+}
+
 .logo {
   margin: 1%;
 }
@@ -101,12 +105,22 @@ header {
   line-height: 1.5;
 }
 
+.feito{
+  text-align: center;
+  display: block;
+}
+
 .footer {
-  background-color: #222;
-  margin-top: 5%;
-  position: initial;
-  bottom: 0;
-  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #333;
+  color: #f1f1f1;
+  margin-top: 58px;
+}
+
+.footer a {
+  float: left;
+  font-size: 17px;
 }
 
 /* FORMULARIO */
