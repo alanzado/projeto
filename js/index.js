@@ -25,7 +25,12 @@ function imprimeGames() {
     }
 }
 
+<<<<<<< HEAD
 /*function age(data) {
+=======
+
+function age(data) {
+>>>>>>> 47817a6c25ad27767e38955159bb95cf6ba15c52
     let calculatedAge = new Date().getFullYear() - data;
     if (calculatedAge == 1) {
         return "ha 1 ano";
