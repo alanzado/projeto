@@ -186,6 +186,25 @@ button:hover:after {
 }
 
 /* RESP */
+
+@media screen and (max-width: 1440px) {
+  .g-recaptcha {
+    padding: 2% 39%;
+    text-align: center;
+    margin: auto;
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+
+@media screen and (max-width: 768px) {
+  .g-recaptcha {
+    padding: 2% 32%;
+    text-align: center;
+    margin: auto;
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+
 @media screen and (max-width: 480px) {
   .form {
       text-align: center;
@@ -205,5 +224,11 @@ button:hover:after {
       display: inline-block;
       font-size: 16px;
   }
+  .g-recaptcha {
+    padding: 2% 3%;
+    text-align: center;
+    margin: auto;
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
 }
 
