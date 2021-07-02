@@ -68,14 +68,13 @@ function imprimeGames() {
         const botao = document.createElement(`button`);
         botao.innerHTML = `➔ Excluir ${game.name}? Clique aqui!`;
         botao.value = game._id;
-        botao.getElementsByClassName("desativar")
+        botao.getElementsByClassName("desativar");
         botao.onclick = deletaGames;
 
         div.appendChild(botao);
         section.appendChild(div);
     }
 }
-
 
 function recebeGames() {
     const requisicao = fetch(url);
