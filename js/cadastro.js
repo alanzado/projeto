@@ -1,4 +1,3 @@
-var listaGames = [];
 
 const url = "https://projeto-final-ppw.herokuapp.com/api/112135";
 var section = document.querySelector("#listaGames");
