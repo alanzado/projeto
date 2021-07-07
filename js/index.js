@@ -8,6 +8,20 @@ var inputData = document.querySelector("#data");
 var inputTag = document.querySelector("#tag");
 var inputDesc = document.querySelector("#desc");
 
+
+function recebeGames() {
+    const requisicao = fetch(url);
+    requisicao.then(function (resposta) {
+        const json = resposta.json();
+        json.then(function (games) {
+            listaGames = games;
+            imprimeGames();
+        });
+    });
+}
+
+recebeGames();
+
 function imprimeGames() {
     section.textContent = "";
     for (const game of listaGames) {
@@ -36,16 +50,3 @@ function age(data) {
         return `ha ${calculatedAge} anos`;
     }
 }*/
-
-function recebeGames() {
-    const requisicao = fetch(url);
-    requisicao.then(function (resposta) {
-        const json = resposta.json();
-        json.then(function (games) {
-            listaGames = games;
-            imprimeGames();
-        });
-    });
-}
-
-recebeGames();

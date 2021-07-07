@@ -11,6 +11,20 @@ var inputTag = document.querySelector("#tag");
 var inputDesc = document.querySelector("#desc");
 form.addEventListener("submit", Enviar);
 
+
+function recebeGames() {
+    const requisicao = fetch(url);
+    requisicao.then(function (resposta) {
+        const json = resposta.json();
+        json.then(function (games) {
+            listaGames = games;
+            imprimeGames();
+        });
+    });
+}
+
+recebeGames();
+
 function Enviar(evento) {
     evento.preventDefault();
     let game = {
@@ -75,16 +89,3 @@ function imprimeGames() {
         section.appendChild(div);
     }
 }
-
-function recebeGames() {
-    const requisicao = fetch(url);
-    requisicao.then(function (resposta) {
-        const json = resposta.json();
-        json.then(function (games) {
-            listaGames = games;
-            imprimeGames();
-        });
-    });
-}
-
-recebeGames();
