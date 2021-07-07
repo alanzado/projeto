@@ -21,12 +21,6 @@ a {
   width: 3rem; /* margin: 0px; */
   padding: 4px;
 }
-header {
-  /* background-color: rgb(34, 34, 34); */
-  /* position: initial; */
-  /* bottom: 0px; */
-  /* width: 100%; */
-}
 .topnav {
   background-color: rgb(0, 0, 0);
   overflow: hidden;
