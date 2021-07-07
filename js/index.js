@@ -18,7 +18,7 @@ function imprimeGames() {
         <h2 class="game-name">${game.name} <span class="tag">(${game.tag})</span></h2>
         <p><strong>Lançamento:</strong> ${game.data}</p>
         <p><strong>Desconto:</strong> ${game.desc}</p>
-        <p><strong><a target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
+        <p><strong><a class="resgatar" target="_blank" href=${game.link} >CLIQUE PARA RESGATAR</a></strong></p>
         </div>
         `;
         section.appendChild(div);

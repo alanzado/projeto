@@ -1,11 +1,10 @@
 body {
   font-family: sans-serif;
-  background-color: #dedede;
-  color: #000;
-  padding: 0;
-  margin: 0;
+  background-color: #79d651;
+  color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0px;
 }
-
 p,
 h1,
 h2,
@@ -14,122 +13,99 @@ h4,
 a {
   text-transform: uppercase;
 }
-
 .logo {
   margin: 1%;
 }
-
 .logo1 {
   float: left;
-  width: 87%;
-  margin-right: 31px;
+  width: 3rem; /* margin: 0px; */
+  padding: 4px;
 }
-
 header {
-  background-color: #222;
-  position: initial;
-  bottom: 0;
-  width: 100%;
+  /* background-color: rgb(34, 34, 34); */
+  /* position: initial; */
+  /* bottom: 0px; */
+  /* width: 100%; */
 }
-
 .topnav {
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
 }
-
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: rgb(242, 242, 242);
   text-align: center;
   padding: 14px 32px;
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #79d651;
+  color: white;
 }
-
 .topnav a.active {
-  background-color: #dedede;
-  color: black;
+  background-color: #79d651;
+  color: white;
 }
-
 .topnav a.active1 {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   padding: 0%;
   margin: 0%;
 }
-
-/* CONTEUDO */
-
 .game-title {
   text-align: center;
   font-weight: normal;
   font-size: 2.6rem;
 }
-
 .game {
   max-width: 100%;
   padding: 10px;
   margin: 30px auto;
-  background-color: #fff;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 3px;
   overflow: hidden;
 }
-
 .game h4 {
-  margin: 0 0 6px 0;
+  margin: 0px 0px 6px;
 }
-
 .game-photo {
   float: left;
   width: 40%;
   margin-right: 15px;
 }
-
 .game-name {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0 0 1rem 0;
+  margin: 0px 0px 1rem;
 }
-
 .tag {
   font-size: 0.9rem;
-  color: #888;
+  color: rgb(136, 136, 136);
   vertical-align: middle;
 }
-
 .link {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   position: relative;
   left: 17px;
   font-size: 0.85rem;
   line-height: 1.5;
 }
-
 .center {
   text-align: center;
   display: block;
 }
-
 .footer {
   overflow: hidden;
   padding: 10px;
-  background-color: #333;
-  color: #f1f1f1;
+  background-color: rgb(0, 0, 0);
+  color: rgb(241, 241, 241);
   margin-top: 58px;
 }
-
 .footer a {
   float: left;
   font-size: 17px;
 }
-
-/* FORMULARIO */
-
 .form {
   text-align: center;
   max-width: 100%;
@@ -137,44 +113,34 @@ header {
 .text {
   padding: 2% 20%;
   text-align: center;
-  padding: auto;
   margin: auto;
 }
-
-/* BOTÃO */
-
 button {
   background: none;
   border: 0px;
   position: relative;
   font-weight: bold;
-  transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out 0s;
   cursor: pointer;
 }
-
-button:after {
+button::after {
   content: "";
-
   transition: inherit;
-
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background: blue;
-
   position: absolute;
   top: -50%;
   left: -10px;
   opacity: 0.3;
   z-index: -1;
 }
-
-button:hover:after {
+button:hover::after {
   width: calc(100% + 20px);
   border-radius: 20px;
   opacity: 0.6;
 }
-
 .enviar {
   border: none;
   padding: 2% 25%;
@@ -183,35 +149,37 @@ button:hover:after {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
   cursor: pointer;
 }
 .enviar:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 12px 16px 0px, rgba(0, 0, 0, 0.19) 0px 17px 50px 0px;
 }
-
-/* RESP */
-
+.banner {
+  width: 100%;
+}
+.resgatar {
+  color: #9bf974;
+}
+a.resgatar:hover {
+  color: #336d1d;
+}
 @media screen and (max-width: 1440px) {
   .g-recaptcha {
       padding: 2% 39%;
       text-align: center;
       margin: auto;
       transform-origin: left top;
-      -webkit-transform-origin: left top;
   }
 }
-
 @media screen and (max-width: 768px) {
   .g-recaptcha {
       padding: 2% 32%;
       text-align: center;
       margin: auto;
       transform-origin: left top;
-      -webkit-transform-origin: left top;
   }
 }
-
 @media screen and (max-width: 480px) {
   .form {
       text-align: center;
@@ -220,7 +188,6 @@ button:hover:after {
   .text {
       padding: 4% 20%;
       text-align: center;
-      padding: auto;
       margin: auto;
   }
   .enviar {
@@ -236,6 +203,15 @@ button:hover:after {
       text-align: center;
       margin: auto;
       transform-origin: left top;
-      -webkit-transform-origin: left top;
+  }
+}
+@media screen and (max-width: 320px) {
+  .topnav a {
+    float: left;
+    color: rgb(242, 242, 242);
+    text-align: center;
+    padding: 14px 29.6px;
+    text-decoration: none;
+    font-size: 17px;
   }
 }
